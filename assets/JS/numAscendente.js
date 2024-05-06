@@ -10,7 +10,7 @@ if(isNaN(num) || isNaN(numDos) || isNaN(numTres)){
 } else{
 
 
-     const long= [num, numDos, numTres];
+    const long= [num, numDos, numTres];
     
     let cant= long.length;
     
