@@ -5,26 +5,21 @@ let nota3 = parseInt(prompt("ingrese su tercer nota de examen"));
 let prom = parseInt((nota + nota2 + nota3) / 3)
 
 
-switch (prom) {
-    case 10:
-        calificacion = "Sobresaliente";
+switch (true) {
+    case prom>=1 && prom<4:
+        calificacion = "insuficiente";
         break;
-    case 9:
-    case 8:
-        calificacion = "nota muy buena";
-        break;
-    case 7:
-    case 6:
-        calificacion = "nota buena";
-        break;
-    case 5:
-    case 4:
+    case prom >=4 && prom <6:
         calificacion = "regular";
         break;
-    case 3:
-    case 2:
-    case 1:
-        calificacion = "insuficiente";
+    case prom >=6 && prom <8:
+        calificacion = "nota buena";
+        break;
+    case prom >=8 && prom <10:
+        calificacion = "regular";
+        break;
+    case prom ==10:
+        calificacion = "sobresaliente";
         break;
     default:
         // Cualquier otro caso
